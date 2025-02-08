@@ -1,0 +1,13 @@
+.banner{
+    display: flex;
+}
+
+.banner .ban img{
+    width: 100%;
+}
+
+@media (max-width:767px) {
+    .banner{
+        flex-wrap: wrap;
+    }
+}

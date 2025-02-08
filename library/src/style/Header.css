@@ -1,0 +1,130 @@
+.header {
+    width: 100%;
+    padding: 40px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: bisque;
+}
+@media (max-width:991px){
+    .header{
+        padding-left:10px;
+        padding-right:10px;
+    }
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.header .container .wedgit {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width:991px){
+    .header .container .wedgit {
+        gap:5px
+    }
+}
+
+.header .container .wedgit .wed_block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.header .container .wedgit .wed_block .icon {
+  font-size: 1.6rem;
+}
+@media (max-width:991px){
+    .header .container .wedgit .wed_block .icon {
+        font-size: 1.2rem;
+      }
+}
+.header .container .wedgit .wed_block span {
+  position: absolute;
+  background-color: red;
+  top: -10px;
+  left:2px;
+  font-size: 1.1rem;
+  color: white;
+  width: 20px;
+  height: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+}
+
+.header .container .links {
+  display: flex;
+  gap: 20px;
+}
+.header .container .links .close{
+    font-size: 1.5rem;
+    display: none;
+}
+@media (max-width:991px){
+    .header .container .links .close{
+        display: block;
+        position: absolute;
+        top:0;
+        right: 0;
+        margin: 20px;
+    } 
+}
+
+@media (max-width:991px){
+    .header .container .links{
+        padding: 10px;
+        flex-direction: column;
+        transition: .5s ease-in-out;
+    } 
+
+.show{
+        display: flex !important;
+        background-color: darkgrey;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        left:0 !important
+    }
+    .hide{
+        display: flex !important;
+        background-color: darkgrey;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top:0;
+        left:-110% !important
+    }
+}
+
+.header .container .logo {
+}
+
+.header .container .logo img {
+  width: 100px;
+}
+
+.header .container .list{
+    font-size: 1.5rem;
+    display: none;
+}
+
+@media (max-width:991px){
+    
+.header .container .list{
+    display: block;
+}
+}
