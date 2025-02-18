@@ -1,0 +1,51 @@
+.services {
+  background-color: gainsboro;
+  padding: 10px;
+  margin: 100px 0;
+}
+
+.services .container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.services .container .service {
+  flex: calc(100% / 3);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid rgb(195, 194, 194);
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+@media (max-width: 767px) {
+  .services .container {
+    width: 100%;
+   flex-direction: column;
+  }
+}
+.services .container .service .serv_cont {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+.services
+  .container
+  .service
+  .serv_cont
+  span {
+    text-align: right;
+}
+
+.services .container .service .serv_icon {
+  font-size: 1.7rem;
+  color: rgb(87, 87, 87);
+}
